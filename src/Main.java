@@ -6,8 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
         GroceryList myGroceries = new GroceryList();
-
-
     }
 
     public static void addGroceryItem(GroceryList groceryList) {
