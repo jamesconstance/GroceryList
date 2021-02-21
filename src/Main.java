@@ -32,7 +32,7 @@ public class Main {
     }
 
     public static void removeGroceryItem(GroceryList groceryList) {
-        System.out.print("Enter new grocery item: ");
+        System.out.print("Enter grocery item to remove from list: ");
         String item = scanner.nextLine();
         if (groceryList.removeItem(item)) {
             System.out.println("Removed " + item + " from the list.");
