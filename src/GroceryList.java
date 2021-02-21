@@ -20,22 +20,13 @@ public class GroceryList {
         return false;
     }
 
-    private boolean updateItem(int position, String newItem) {
-        groceryList.set(position, newItem);
-        return true;
-    }
-
-    public boolean updateItem(String item, String newItem) {
+    public boolean replaceItem(String item, String newItem) {
         int position = getItemPosition(item);
         if (position >= 0) {
             groceryList.set(position, newItem);
             return true;
         }
         return false;
-    }
-
-    private int getItemPosition(String item) {
-        return groceryList.indexOf(item);
     }
 
     public boolean containsItem(String item) {
@@ -46,6 +37,10 @@ public class GroceryList {
         for (String item : groceryList) {
             System.out.println(groceryList.indexOf(item) + 1 + ". " + item);
         }
+    }
+
+    private int getItemPosition(String item) {
+        return groceryList.indexOf(item);
     }
 
 
