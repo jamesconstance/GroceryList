@@ -6,6 +6,22 @@ public class Main {
 
     public static void main(String[] args) {
         GroceryList myGroceries = new GroceryList();
+
+        addGroceryItem(myGroceries);
+        addGroceryItem(myGroceries);
+        addGroceryItem(myGroceries);
+
+        myGroceries.printList();
+
+        replaceGroceryItem(myGroceries);
+
+        myGroceries.printList();
+
+        removeGroceryItem(myGroceries);
+
+        myGroceries.printList();
+
+        containsItem(myGroceries);
     }
 
     public static void addGroceryItem(GroceryList groceryList) {
